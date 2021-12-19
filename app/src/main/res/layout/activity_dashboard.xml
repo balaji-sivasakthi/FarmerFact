@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbarlayout"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/purple_200"
+        app:title="Dashboard"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_baseline_dehaze_24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout><GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarlayout"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:useDefaultMargins="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:clickable="true"
+            android:id="@+id/add"
+            android:foreground="?selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:src="@drawable/add"></ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+          android:clickable="true"
+            android:id="@+id/list"
+           android:foreground="?selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp"
+                android:src="@drawable/list"></ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
+    </GridLayout>
+
+</RelativeLayout>
